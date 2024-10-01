@@ -82,14 +82,14 @@ const technologyData: Technology[] = [
   {
     name: 'Spring Boot',
     description: 'An open-source Java-based framework used to create a microservice',
-    logo: '/images/techIcon/SpringBoot.png',
+    logo: '/images/techIcon/Spring.png',
   },
 
   // Mobile Development
   {
     name: 'React Native',
     description: 'A framework for building native apps using React',
-    logo: '/images/techIcon/ReactNative.png',
+    logo: '/images/techIcon/React.png',
   },
   {
     name: 'Flutter',
@@ -101,11 +101,11 @@ const technologyData: Technology[] = [
     description: 'A complete open-source SDK for hybrid mobile app development',
     logo: '/images/techIcon/Ionic.png',
   },
-  {
-    name: 'Cordova / Phonegap',
-    description: 'A mobile application development framework',
-    logo: '/images/techIcon/Cordova.png',
-  },
+  // {
+  //   name: 'Cordova / Phonegap',
+  //   description: 'A mobile application development framework',
+  //   logo: '/images/techIcon/Cordova.png',
+  // },
   {
     name: 'Swift',
     description: 'A powerful and intuitive programming language for macOS, iOS, watchOS, and tvOS',
@@ -131,7 +131,7 @@ const technologyData: Technology[] = [
   {
     name: 'Google Cloud Platform (GCP)',
     description: 'Google\'s suite of cloud computing services',
-    logo: '/images/techIcon/GCP.png',
+    logo: '/images/techIcon/Google-Cloud.png',
   },
   {
     name: 'Firebase',
@@ -163,7 +163,7 @@ const technologyData: Technology[] = [
   {
     name: 'PostgreSQL',
     description: 'A powerful, open-source object-relational database system',
-    logo: '/images/techIcon/PostgreSQL.png',
+    logo: '/images/techIcon/PostgresSQL.png',
   },
   {
     name: 'MongoDB',
@@ -178,19 +178,19 @@ const technologyData: Technology[] = [
   {
     name: 'SQL Server',
     description: 'A relational database management system developed by Microsoft',
-    logo: '/images/techIcon/SQLServer.png',
+    logo: '/images/techIcon/Microsoft-SQL-Server.png',
   },
   {
     name: 'Firebase Database',
     description: 'A real-time NoSQL database built for the cloud',
-    logo: '/images/techIcon/FirebaseDatabase.png',
+    logo: '/images/techIcon/Firebase.png',
   },
 
   // Version Control & CI/CD
   {
     name: 'Git / GitHub',
     description: 'A distributed version-control system for tracking changes in source code during software development',
-    logo: '/images/techIcon/GitGitHub.png',
+    logo: '/images/techIcon/GitHub.png',
   },
   {
     name: 'GitLab',
@@ -227,7 +227,7 @@ const technologyData: Technology[] = [
   {
     name: 'Adobe XD',
     description: 'A vector-based user experience design tool for web apps and mobile apps',
-    logo: '/images/techIcon/AdobeXD.png',
+    logo: '/images/techIcon/Adobe-XD.png',
   },
   {
     name: 'Sketch',
@@ -237,12 +237,12 @@ const technologyData: Technology[] = [
   {
     name: 'Adobe Photoshop',
     description: 'A raster graphics editor developed and published by Adobe',
-    logo: '/images/techIcon/Photoshop.png',
+    logo: '/images/techIcon/Adobe-Photoshop.png',
   },
   {
     name: 'REST API',
     description: 'A software architectural style that defines a set of constraints to be used for creating web services',
-    logo: '/images/techIcon/RESTAPI.png',
+    logo: '/images/techIcon/OpenAPI.png',
   },
   {
     name: 'GraphQL',
