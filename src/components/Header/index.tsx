@@ -172,7 +172,7 @@ const Header = () => {
                 Get a quote
                 </Link>
                 <div>
-                  {/* <ThemeToggler /> */}
+                  <ThemeToggler />
                 </div>
               </div>
             </div>
