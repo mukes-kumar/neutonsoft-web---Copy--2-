@@ -54,17 +54,23 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-  {
-    id: 4,
-    title: "Our Products",
-    path: "/blog",
-    newTab: false,
-  },
+  // {
+  //   id: 4,
+  //   title: "Our Products",
+  //   path: "/blog",
+  //   newTab: false,
+  // },
   
   {
-    id: 6,
+    id: 4,
     title: "Contect Us",
     path: "/contact",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "Technology",
+    path: "/technology",
     newTab: false,
   },
   
