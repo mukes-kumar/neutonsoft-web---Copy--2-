@@ -4,7 +4,7 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Home",
-    path: "/",
+    path: "/home",
     newTab: false,
   },
   {
@@ -21,31 +21,25 @@ const menuData: Menu[] = [
       
       {
         id: 2,
-        title: "Portfolio",
-        path: "/about",
-        newTab: false,
-      },
-      {
-        id: 3,
         title: "Blogs",
         path: "/about",
         newTab: false,
       },
       {
-        id: 4,
+        id: 3,
         title: "Our Vision",
         path: "/blog",
         newTab: false,
       },
       {
-        id: 5,
+        id: 4,
         title: "Our Mission",
         path: "/blog",
         newTab: false,
       },
       
       {
-        id: 6,
+        id: 5,
         title: "Career",
         path: "/blog",
         newTab: false,
@@ -66,12 +60,7 @@ const menuData: Menu[] = [
     path: "/blog",
     newTab: false,
   },
-  // {
-  //   id: 5,
-  //   title: "Technologies",
-  //   path: "/technology",
-  //   newTab: false,
-  // },
+  
   {
     id: 6,
     title: "Contect Us",

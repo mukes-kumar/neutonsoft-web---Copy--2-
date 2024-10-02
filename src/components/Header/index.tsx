@@ -167,12 +167,12 @@ const Header = () => {
                 </Link> */}
                 <Link
                   href="/contact"
-                  className={`ease-in-up shadow-btn hover:shadow-btn-hover  rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 ${navbarOpen?'':'hidden'}`}
+                  className={`ease-in-up shadow-btn hover:shadow-btn-hover  rounded-lg bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 ${navbarOpen?'':'hidden'}`}
                 >
                 Get a quote
                 </Link>
                 <div>
-                  {/* <ThemeToggler /> */}
+                  <ThemeToggler />
                 </div>
               </div>
             </div>
