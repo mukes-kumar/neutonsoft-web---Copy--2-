@@ -61,14 +61,14 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className={`${sticky?'':''} w-full `}
+                  className={`${sticky?'':''} w-full hidden`}
                 />
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
-                  className="hidden w-full dark:block"
+                  className=" w-full dark:block"
                 />
               </Link>
             </div>
@@ -91,7 +91,7 @@ const Header = () => {
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'bg-white'} transition-all duration-300 dark:bg-black ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'bg-white'} transition-all duration-300 dark:bg-white ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
@@ -174,7 +174,7 @@ const Header = () => {
                 Get a quote
                 </Link>
                 <div>
-                  {/* <ThemeToggler /> */}
+                  <ThemeToggler />
                 </div>
               </div>
             </div>
