@@ -15,7 +15,7 @@ const Technologies = () => {
               height={100}
               className="tech-logo"
             />
-            <h3 style={{color:'black'}}>{tech.name}</h3>
+            <h3>{tech.name}</h3>
             <p>{tech.description}</p>
           </div>
         ))}
