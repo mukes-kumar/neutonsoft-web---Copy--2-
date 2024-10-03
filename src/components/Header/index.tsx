@@ -45,7 +45,7 @@ const Header = () => {
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-slate-100 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            : "absolute lg:bg-transparent bg-white"
         }`}
       >
         <div className="container">
@@ -82,24 +82,24 @@ const Header = () => {
                   className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'bg-white'} transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'lg:bg-white bg-black'} transition-all duration-300 dark:bg-white ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'bg-white'} transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'lg:bg-white bg-black'}  transition-all duration-300 dark:bg-white ${
                       navbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'bg-white'} transition-all duration-300 dark:bg-black ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] ${sticky?'bg-black':'lg:bg-white bg-black'} transition-all duration-300 dark:bg-black ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-gray-700 px-6 py-4 duration-300 dark:border-body-color/20 dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-slate-100 px-6 py-4 duration-300 dark:border-body-color/20 dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full  opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -116,7 +116,7 @@ const Header = () => {
                                 ? "text-primary "
                                 : "text-dark hover:text-primary "
                             }
-                              ${sticky?'text-black dark:hover:text-gray-800':'dark:text-white/70 hover:text-slate-300'}    
+                              ${sticky?'lg:text-black text-gray-800 hover:text-green-600':' lg:dark:text-white text-gray-700  hover:text-green-600'}    
                             `}
                           >
                             {menuItem.title}
@@ -125,7 +125,8 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className={`flex cursor-pointer items-center justify-between py-2 text-base  group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky?'dark:group-hover:text-slate-500 text-dark':'dark:text-white/70 dark:group-hover:text-white '}`}
+                              className={`flex cursor-pointer items-center justify-between py-2 text-base group-hover:text-green-500  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky?'lg:text-black text-gray-800 hover:text-green-600 group-hover:text-primary':' lg:dark:text-white text-gray-700  hover:text-green-600 group-hover:text-primary'}    
+                            `}
                             >
                               {menuItem.title}
                               <span className="pl-1">
@@ -140,7 +141,7 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] ml-5 duration-300 group-hover:opacity-100 dark:bg-gray-700 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                              className={`submenu relative left-0 top-full rounded-sm ${sticky?'bg-slate-100':'bg-slate-200'} transition-[top] ml-5 duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
@@ -148,7 +149,8 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  className={`block rounded py-2.5 text-sm 
+                                  lg:px-3 ${sticky?'':''}`}
                                 >
                                   {submenuItem.title}
                                 </Link>
