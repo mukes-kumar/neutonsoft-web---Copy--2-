@@ -27,19 +27,25 @@ const menuData: Menu[] = [
       },
       {
         id: 3,
-        title: "Our Vision",
+        title: "Portfolio",
         path: "/blog",
         newTab: false,
       },
       {
         id: 4,
+        title: "Our Vision",
+        path: "/blog",
+        newTab: false,
+      },
+      {
+        id: 5,
         title: "Our Mission",
         path: "/blog",
         newTab: false,
       },
       
       {
-        id: 5,
+        id: 6,
         title: "Career",
         path: "/blog",
         newTab: false,
@@ -54,12 +60,12 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-  // {
-  //   id: 4,
-  //   title: "Our Products",
-  //   path: "/blog",
-  //   newTab: false,
-  // },
+  {
+    id: 4,
+    title: "Our Products",
+    path: "/blog",
+    newTab: false,
+  },
   
   {
     id: 4,
