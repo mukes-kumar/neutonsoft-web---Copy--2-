@@ -7,9 +7,9 @@ function page() {
       <div className='text-center text-blue-600 font-bold text-2xl mt-28 '>Carrer Page
         
       </div>
-      <p className='text-center'>
+      <div className='text-center'>
           <CarrerPage />
-      </p>
+      </div>
     </>
 
   )
