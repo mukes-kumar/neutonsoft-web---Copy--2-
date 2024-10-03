@@ -14,13 +14,11 @@ const Technology = () => {
     <>
       <Breadcrumb
         pageName="Technology"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Explore the evolving landscape of technology, where innovation meets everyday life. Delve into the core of cutting-edge advancements shaping our future, with insights into development and functionality."
       />
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
          <Technologies/>
-
-          
         </div>
       </section>
     </>

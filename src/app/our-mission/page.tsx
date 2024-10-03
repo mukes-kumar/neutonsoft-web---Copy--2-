@@ -17,9 +17,7 @@ const Services = () => {
         <Breadcrumb
           pageName="Our Company Mission"
           description="Empowering businesses with innovative software solutions that drive growth and efficiency.
-          Your technology partner for transformative digital solutions.
-
-"
+          Your technology partner for transformative digital solutions."
         />
       </div>
       <OurMission />

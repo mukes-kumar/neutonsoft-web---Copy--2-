@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 
 import Image from "next/image";
 import { useState } from "react";
@@ -9,8 +10,17 @@ import ModalVideo from "react-modal-video";
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const variants = {
+    hidden: { opacity: 0, scale: 1 },
+    show: { opacity: 1, scale: 1 },
+  };
+
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <motion.section className="relative z-10 py-16 md:py-20 lg:py-28" 
+    variants={variants}
+    initial="hidden"
+    animate="show"
+    >
       <div className="container">
         <SectionTitle
           title="We are ready to help"
@@ -59,7 +69,7 @@ const Video = () => {
       />
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
-    </section>
+    </motion.section>
   );
 };
 

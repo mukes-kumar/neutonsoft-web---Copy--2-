@@ -1,3 +1,6 @@
+"use client"
+import { motion } from 'framer-motion';
+
 const SectionTitle = ({
   title,
   paragraph,
@@ -11,9 +14,17 @@ const SectionTitle = ({
   center?: boolean;
   mb?: string;
 }) => {
+
+  const variants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { opacity: 1, scale: 1 },
+  };
   return (
     <>
-      <div
+      <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="show"
         className={`w-full ${center ? "mx-auto text-center" : ""}`}
         style={{ maxWidth: width, marginBottom: mb }}
       >
@@ -23,7 +34,7 @@ const SectionTitle = ({
         <p className="text-base !leading-relaxed text-body-color md:text-lg">
           {paragraph}
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };

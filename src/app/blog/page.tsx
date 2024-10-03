@@ -15,7 +15,7 @@ const Blog = () => {
     <>
       <Breadcrumb
         pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Revolutionizing Web Development with Cutting-Edge Technology."
       />
 
       <section className="pb-[120px] pt-[120px]">
@@ -36,7 +36,7 @@ const Blog = () => {
               <ul className="flex items-center justify-center pt-8">
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="#01"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
                     Prev
@@ -44,7 +44,7 @@ const Blog = () => {
                 </li>
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="blog-details"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
                     1
@@ -52,7 +52,7 @@ const Blog = () => {
                 </li>
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="blog-details"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
                     2
@@ -60,7 +60,7 @@ const Blog = () => {
                 </li>
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="blog-details"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
                     3
@@ -73,7 +73,7 @@ const Blog = () => {
                 </li>
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="blog-details"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
                     12
