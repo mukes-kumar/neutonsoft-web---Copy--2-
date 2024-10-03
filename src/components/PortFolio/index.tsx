@@ -9,7 +9,7 @@ function PortFolio() {
           <div>
               <Image src="/images/portfolio/topImg1.png" height={400} width={1000} alt='img1' className='w-full'/>
           </div>
-          <div className='top-96 lg:top-[700px] right-4 lg:right-28 absolute'>
+          <div className='sm:top-[350px] lg:top-[550px] xl:top-[700px] md:top-[450px] top-[272px] sm:right-4 right-2 lg:right-28 absolute'>
           <DownloadPdfButton />
           </div>
         </div>
