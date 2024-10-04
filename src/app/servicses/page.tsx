@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
+import Features from "@/components/Features";
 import ServicePage from "@/components/Servicess";
 
 import { Metadata } from "next";
@@ -14,11 +15,12 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <>
-        <Breadcrumb
-          pageName="Services Page"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-        />
-      <ServicePage />
+      <Breadcrumb
+        pageName="Our Services"
+        description="At Neutonsoft, we develop advanced software products that are well designed, coded to high standards, and well-tested. We ensure flawless
+        communication & provide regular updates. "
+      />
+      <Features />
     </>
   );
 };
