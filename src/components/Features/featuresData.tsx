@@ -4,6 +4,7 @@ const featuresData: Feature[] = [
   {
     id: 1,
     icon: (
+      
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
         <path
           opacity="0.5"
