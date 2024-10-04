@@ -14,12 +14,10 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <>
-      <div className="mt-20">
         <Breadcrumb
           pageName="Services Page"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
         />
-      </div>
       <ServicePage />
     </>
   );

@@ -20,7 +20,7 @@ const Breadcrumb = ({
       variants={variants}
       initial="hidden"
       animate="show"
-      className={`relative z-10 overflow-hidden  ${pageName==="About Us"?'pt-0':'pt-28 lg:pt-[80px]'}`}>
+      className={`relative z-10 overflow-hidden  ${pageName==="About Us"?'pt-0':'pt-40 lg:pt-[160px]'}`}>
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">

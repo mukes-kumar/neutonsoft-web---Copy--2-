@@ -12,12 +12,10 @@ export const metadata: Metadata = {
 const Technology = () => {
   return (
     <>
-      <div className="mt-16">
         <Breadcrumb
           pageName="Technology"
           description="Explore the evolving landscape of technology, where innovation meets everyday life. Delve into the core of cutting-edge advancements shaping our future, with insights into development and functionality."
         />
-      </div>
       <section className="pb-[60px] pt-[60px]">
         <div className="container">
           <Technologies />
