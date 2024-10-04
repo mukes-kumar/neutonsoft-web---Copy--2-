@@ -26,14 +26,14 @@ const AboutSectionTwo = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
-              <div className="mb-9">
+              <div className="mb-9 shadow-md p-2">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Bug free code
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <div className="cursor-pointer text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                Discover effective strategies to eliminate bugs from your code and ensure high-quality software. Explore best practices for coding, testing, and debugging.
+                <button className="text-red-800">Read more </button>
+                </div>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">

@@ -15,12 +15,14 @@ const AboutPage = () => {
   return (
     <>
       <AboutHero />
-      <Breadcrumb
-        pageName="About Page"
+      
+      <Breadcrumb 
+        pageName="About Us"
         description="We are a Technology, Consulting
             and Outsourcing company
             delivering end to end IT solutions."
       />
+      
       <AboutSectionOne />
       <AboutSectionTwo />
     </>

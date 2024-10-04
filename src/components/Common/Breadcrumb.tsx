@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+import { motion } from 'framer-motion';
 
 const Breadcrumb = ({
   pageName,
@@ -7,9 +9,18 @@ const Breadcrumb = ({
   pageName: string;
   description: string;
 }) => {
+
+  const variants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { opacity: 1, scale: 1 },
+  };
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
+      <motion.section 
+      variants={variants}
+      initial="hidden"
+      animate="show"
+      className={`relative z-10 overflow-hidden  ${pageName==="About Us"?'pt-0':'pt-28 lg:pt-[80px]'}`}>
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
@@ -20,9 +31,10 @@ const Breadcrumb = ({
                 <p className="text-base font-medium leading-relaxed text-body-color">
                   {description}
                 </p>
+
               </div>
             </div>
-            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
+            <div className="md:block hidden w-full px-4 md:w-4/12 lg:w-5/12">
               <div className="text-end">
                 <ul className="flex items-center md:justify-end">
                   <li className="flex items-center">
@@ -42,7 +54,44 @@ const Breadcrumb = ({
             </div>
           </div>
         </div>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName==="About Us"?'show':'hidden'}`}>
+          <div className="pl-10 p-4">
+            {/* <h2 className="text-2xl font-bold text-gray-900">About Us</h2> */}
+            <p className="text-base font- leading-relaxed text-body-color">NeutonSoft is Fattest growing service provider of Recruitment Process Outsourcing (RPO) in USA, Canada,UAE and India, We recognizes the importance of the expertise of recruitment in an ever-changing economic scenario. Our strategy is focused upon results-driven RPO services and Solutions applicable to a diverse range of organizations. We have the resources and talent to manage recruitment process from the beginning to end.
+              <br />
+              At NeutonSoft we help our customers to maximize return and productivity through outsourcing their non-core functions.
+              <br />
+              In partnering with companies can expect:
+              {/* <hr className="w-80 border-b border-gray-300 mt-1" /> */}
+               
+              <br />
 
+            </p>
+            <div className="ml-10 text-base font- leading-relaxed text-body-color">
+            <p className="mt-4 lg:mt-1">Better and more cost-effective processes
+            </p>
+            <p className="mt-2 lg:mt-1">Reductions in cost and time to hire and more control over both
+            </p>
+            <p className="mt-2 lg:mt-1">A wider and more engaged network of potential candidates
+            </p>
+            <p className="mt-2 lg:mt-1">Enhanced employer brand and corporate reputation
+            </p>
+            <p className="mt-2 lg:mt-1">Closer alignment of talent strategy with business strategy
+            </p>
+
+            </div>
+          </div>
+          <div className="text- pl-10 p-4">
+            <h2 className="text-2xl font-bold text-gray-900">Why NeutonSoft?</h2>
+            <p className="text-base font- leading-relaxed text-body-color">
+              NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.<br/><br/>
+
+              NeutonSoft team has expertise in Partial Cycle RPO, Enterprise RPO , Partial Cycle RPO and Project RPO.<br/><br/>
+
+              We believe that to understand the benefits and capabilities of remote staffing, agencies need to experience it first-hand. why not call us today to try us out!<br/><br/>
+            </p>
+          </div>
+        </div>
         <div>
           <span className="absolute left-0 top-0 z-[-1]">
             <svg
@@ -117,7 +166,7 @@ const Breadcrumb = ({
             </svg>
           </span>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
