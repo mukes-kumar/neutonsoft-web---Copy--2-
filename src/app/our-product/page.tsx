@@ -1,9 +1,16 @@
+import Breadcrumb from '@/components/Common/Breadcrumb'
+import OurProductPage from '@/components/Our-Product'
 import React from 'react'
 
 function page() {
   return (
     <>
-      <div className='mt-20 text-3xl text-blue-800 font-bold text-center'>Our Product Page</div>
+    <Breadcrumb
+        pageName="Our Product Page"
+        description="Our dedicated customer support team is ready to assist you with any questions or concerns. Feel free to reach out to us using the following methods."
+      />
+
+      <OurProductPage />
     </>
   )
 }

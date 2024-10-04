@@ -13,13 +13,11 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <>
-      <div className="mt-20">
         <Breadcrumb
           pageName="Our Company Mission"
           description="Empowering businesses with innovative software solutions that drive growth and efficiency.
           Your technology partner for transformative digital solutions."
         />
-      </div>
       <OurMission />
     </>
   );

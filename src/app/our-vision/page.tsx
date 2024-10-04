@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <>
-      <div className="mt-20">
         <Breadcrumb
           pageName="Our Vision"
           description="Create exceptional software and web applications that solve real-world problems and deliver tangible value.
@@ -20,7 +19,6 @@ const Services = () => {
           Establish ourselves as a trusted partner for businesses seeking reliable and scalable technology solutions.
           Make a positive impact on our clients, our community, and the world through our work.."
         />
-      </div>
       <OurVision />
     </>
   );
