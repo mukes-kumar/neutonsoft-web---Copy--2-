@@ -110,16 +110,17 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                <h2 className="text-xl font-bold text-black dark:text-white">
+                  Services
                 </h2>
+                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-40"></div>
                 <ul>
                   <li>
                     <Link
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Web Design/Development
                     </Link>
                   </li>
                   <li>
@@ -127,7 +128,65 @@ const Footer = () => {
                       href="/pricing"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      App Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      UI/UX Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      HubSpot Integration
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Email Marketing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Website Migration
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="text-xl font-bold text-black dark:text-white">
+                  Support & Help
+                </h2>
+                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-32 mr-96"></div>
+                <ul>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Open Support Ticket
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Terms of Use
                     </Link>
                   </li>
                   <li>
@@ -139,14 +198,31 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
+                <div className="flex flex-col md:flex-row items-center justify-center">
+                  <form className="flex flex-col md:w-auto lg:mr-6 mr-72 mt-2">
+                    <input
+                      type="text"
+                      value=""
+
+                      placeholder="Email"
+                      className="flex-grow px-4 py-2 border rounded-lg md:mr-2"
+                    />
+                    
+                    <button  className={`mt-4 ml-36  text-white rounded-lg shadow-submit md:block px-8 py-3 md:px-6 lg:px-5 xl:px-7  btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-400 hover:bg-white group  
+                  `}>
+                      <span className={`w-40 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 `}></span>
+                      <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white text-md">Submit</span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
-
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="text-xl font-bold text-black dark:text-white">
                   Terms
                 </h2>
+                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-44"></div>
                 <ul>
                   <li>
                     <Link
@@ -176,39 +252,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>

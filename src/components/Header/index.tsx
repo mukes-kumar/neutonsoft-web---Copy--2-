@@ -109,7 +109,7 @@ const Header = () => {
                                 ? ""
                                 : ""
                               }
-                              ${sticky ? 'lg:text-black text-gray-800 hover:text-green-600' : ' lg:text-gray-500 text-gray-700  lg:font-semibold hover:text-green-600'}    
+                              ${sticky ? 'lg:text-black text-gray-800 hover:text-indigo-400' : ' lg:text-gray-500 text-gray-700  lg:font-semibold hover:text-indigo-400'}    
                             `}
                           >
                             {menuItem.title}
@@ -118,7 +118,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className={`flex cursor-pointer items-center justify-between py-2 text-base group-hover:text-green-500  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? 'lg:text-black text-gray-800 hover:text-green-600 ' : ' lg:dark:text-gray-500 text-gray-700  hover:text-green-600 lg:font-semibold'}    
+                              className={`flex cursor-pointer items-center justify-between py-2 text-base group-hover:text-indigo-400  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? 'lg:text-black text-gray-700 hover:text-indigo-400 ' : ' text-gray-500  hover:text-indigo-400 lg:font-semibold'}    
                             `}
                             >
                               {menuItem.title}
@@ -134,7 +134,7 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm ${sticky ? 'bg-slate-100' : 'bg-slate-100'} transition-[top] ml-5 duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"
+                              className={`submenu relative left-0 top-full rounded-sm ${sticky ? 'bg-slate-100 ' : 'bg-slate-100'} transition-[top] ml-5 duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"
                                 }`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
@@ -142,7 +142,7 @@ const Header = () => {
                                   href={submenuItem.path}
                                   key={index}
                                   className={`block rounded py-2.5 text-sm 
-                                  lg:px-3 ${sticky ? '' : ''}`}
+                                  lg:px-3 ${sticky ? 'hover:hover:text-indigo-400' : 'hover:text-indigo-400'}`}
                                 >
                                   {submenuItem.title}
                                 </Link>

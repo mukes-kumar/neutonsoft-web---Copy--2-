@@ -23,7 +23,7 @@ const AboutPage = () => {
             delivering end to end IT solutions."
       />
       
-      <AboutSectionOne />
+      {/* <AboutSectionOne /> */}
       <AboutSectionTwo />
     </>
   );

@@ -1,14 +1,15 @@
+import CallMail from "./CallMail";
 import Locations from "./locations";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 ">
+    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 bg-slate-100">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="mb-12 rounded-xl bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
@@ -67,8 +68,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                    {/* <button className="rounded-lg bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+                      Submit
+                    </button> */}
+
+                    <button  className={`shadow-submit md:block px-8 py-3 md:px-6 lg:px-5 xl:px-9  btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-400 rounded hover:bg-white group  
+                  `}>
+                      <span className={`w-40 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 `}></span>
+                      <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white text-lg">Submit</span>
                     </button>
                   </div>
                 </div>
@@ -76,9 +83,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
+            {/* <NewsLatterBox /> */}
+            <CallMail />
           </div>
-          <Locations />
+          {/* <Locations /> */}
 
         </div>
       </div>

@@ -11,6 +11,8 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import Technology from "./technology/page";
+import React from "react";
+import OurProcess from "@/components/Our-Process";
 
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
@@ -24,14 +26,15 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <Brands />
-      <AboutSectionOne />
+      <OurProcess />
+      {/* <Video /> */}
+      {/* <AboutSectionOne /> */}
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
-      <Blog />
+      {/* <Blog /> */}
       {/* <Technology /> */}
+      <Brands />
       <Contact />
     </>
   );
