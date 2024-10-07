@@ -39,7 +39,7 @@ const WhatYouDo = () => {
             </div>
           </div>
           <div className='items-center lg:text-left text-center'>
-            <Link href="/about" className="bg-blue-500 text-white px-3 py-2 rounded-lg mt-2">
+            <Link href="/about" className="bg-blue-500 text-white px-3 py-2 rounded-lg mt-3">
               View More
             </Link>
           </div>
