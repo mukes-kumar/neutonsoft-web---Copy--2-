@@ -16,7 +16,7 @@ import OurProcess from "@/components/Our-Process";
 import WhatYouDo from "@/components/Our-Process/WhatYouDo/Index";
 
 export const metadata: Metadata = {
-  title: "NeutonSoft",
+  title: "Neutonsoft",
   description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
