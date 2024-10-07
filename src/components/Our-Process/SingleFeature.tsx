@@ -11,7 +11,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
      bg-indigo-0 cursor-pointer hover:bg-gradient-to-t from-indigo-50 via-indigo-100 to-indigo-200 duration-300 
     ">
       <div className="wow fadeInUp " data-wow-delay=".15s">
-        <div className=" mb-5 flex h-[40px] w-[40px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-red-600">
+        <div className=" mb-5 flex h-[40px] w-[40px] items-center justify-center rounded-md bg-opacity-10 text-red-600">
           
           {/* <Image src={icon} alt="icon" height={40} width={400}/> */}
           {icon}

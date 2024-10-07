@@ -1,7 +1,13 @@
 import Breadcrumb from '@/components/Common/Breadcrumb'
 import Pricing from '@/components/Pricing'
 import React from 'react'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Pricing | Transforming Ideas into Innovative Solutions",
+  description: "Pricing | Neutonsoft",
+  // other metadata
+};
 function page() {
   return (
     <>

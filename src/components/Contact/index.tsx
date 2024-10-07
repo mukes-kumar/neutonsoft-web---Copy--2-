@@ -4,7 +4,7 @@ import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 bg-slate-100">
+    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-16 bg-slate-100">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">

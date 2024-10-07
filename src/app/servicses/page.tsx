@@ -7,8 +7,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Services Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: "Services | Transforming Ideas into Innovative Solutions",
+  description: "This is Services at Neutonsoft",
   // other metadata
 };
 

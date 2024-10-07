@@ -6,7 +6,7 @@ import featuresData from "./featuresData";
 const OurProcess = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-1 md:py-2 lg:py-1">
         <div className="container">
           <SectionTitle
             title="Our Process"

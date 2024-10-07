@@ -27,8 +27,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.
-                Expert Web and Mobile Application Development Services to Elevate Your Business!
+                  NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.
+                  Expert Web and Mobile Application Development Services to Elevate Your Business!
                 </p>
                 <div className="flex items-center">
                   <a
@@ -109,7 +109,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-16">
               <div className="mb-12 lg:mb-16">
                 <h2 className="text-xl font-bold text-black dark:text-white">
                   Services
@@ -140,22 +140,8 @@ const Footer = () => {
                       UI/UX Design
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      HubSpot Integration
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Email Marketing
-                    </Link>
-                  </li>
+                  
+                 
                   <li>
                     <Link
                       href="/about"
@@ -167,58 +153,8 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-32 mr-96"></div>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-                <div className="flex flex-col md:flex-row items-center justify-center">
-                  <form className="flex flex-col md:w-auto lg:mr-6 mr-72 mt-2">
-                    <input
-                      type="text"
-                      value=""
-
-                      placeholder="Email"
-                      className="flex-grow px-4 py-2 border rounded-lg md:mr-2"
-                    />
-                    
-                    <button  className={`mt-4 ml-36  text-white rounded-lg shadow-submit md:block px-8 py-3 md:px-6 lg:px-5 xl:px-7  btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-400 hover:bg-white group  
-                  `}>
-                      <span className={`w-40 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 `}></span>
-                      <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white text-md">Submit</span>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-20">
               <div className="mb-12 lg:mb-16">
                 <h2 className="text-xl font-bold text-black dark:text-white">
                   Terms
@@ -249,9 +185,47 @@ const Footer = () => {
                       Refund Policy
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Terms of Use
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
+            {/* <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="text-xl font-bold text-black dark:text-white">
+                  Support & Help
+                </h2>
+                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-32 mr-96"></div>
+                <ul>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Open Support Ticket
+                    </Link>
+                  </li>
+                 
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      About
+                    </Link>
+                  </li>
+                </ul>
+                <div className="flex flex-col md:flex-row items-center justify-center">
+                </div>
+              </div>
+            </div> */}
+            
 
 
           </div>
@@ -259,14 +233,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white flex justify-center">
-              © 2024
-              <Image
-                src="/images/logo/neuton1.png"
-                alt="logo"
-                className="mx-1"
-                width={140}
-                height={30}
-              />All Rights Reserved.
+              ©2022 Copyright All Rights Reserved.
             </p>
           </div>
         </div>

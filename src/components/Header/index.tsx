@@ -106,8 +106,8 @@ const Header = () => {
                           <Link
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
-                                ? ""
-                                : ""
+                              ? "text-primary dark:text-indigo-400"
+                              : "text-dark hover:text-primary dark:hover:text-indigo-400"
                               }
                               ${sticky ? 'lg:text-black text-gray-800 hover:text-indigo-400' : ' lg:text-gray-500 text-gray-700  lg:font-semibold hover:text-indigo-400'}    
                             `}

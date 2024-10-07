@@ -8,7 +8,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-10 lg:pb-20">
       <div className="container">
         <SectionTitle
           title="Simple and Affordable Pricing"
@@ -18,7 +18,7 @@ const Pricing = () => {
         />
 
         <div className="w-full">
-          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
+          <div className="mb-8 flex justify-center md:mb-12 lg:mb-8">
             <span
               onClick={() => setIsMonthly(true)}
               className={`${

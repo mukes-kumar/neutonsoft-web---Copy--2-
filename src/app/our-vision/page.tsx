@@ -4,8 +4,8 @@ import OurVision from "@/components/OurVision";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: "Our-Vision | Transforming Ideas into Innovative Solutions",
+  description: "This is Our-Vision | Neutonsoft",
   // other metadata
 };
 

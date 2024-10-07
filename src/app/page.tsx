@@ -14,8 +14,8 @@ import OurProcess from "@/components/Our-Process";
 import WhatYouDo from "@/components/Our-Process/WhatYouDo/Index";
 
 export const metadata: Metadata = {
-  title: "Neutonsoft",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Neutonsoft | Transforming Ideas into Innovative Solutions",
+  description: "Transforming Ideas into Innovative Solutions",
   // other metadata
 };
 
@@ -30,7 +30,7 @@ export default function Home() {
       {/* <AboutSectionOne /> */}
       {/* <AboutSectionTwo /> */}
       <WhatYouDo />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Pricing />
       {/* <Blog /> */}
       {/* <Technology /> */}

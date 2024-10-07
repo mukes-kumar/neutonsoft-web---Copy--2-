@@ -59,7 +59,7 @@ const CallMail = () => {
               className="mb-4 mr-5 mt-4 bg-slate-200 p-3 rounded-md"
             />
             <div className='flex flex-col'>
-              <h2 className="text-xl font-semibold mb-2 text-indigo-600">{info.text}</h2>
+              <h2 className="text-xl font-semibold mb-2 text-slate-600">{info.text}</h2>
               <p className="text-gray-500">{info.content}
               </p>
               <p className='text-gray-500 mt-1'>{info.content1}</p>
