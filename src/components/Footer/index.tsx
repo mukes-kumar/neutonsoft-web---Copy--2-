@@ -27,7 +27,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Expert Web and Mobile Application Development Services to Elevate Your Business!
+                NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.
+                Expert Web and Mobile Application Development Services to Elevate Your Business!
                 </p>
                 <div className="flex items-center">
                   <a
