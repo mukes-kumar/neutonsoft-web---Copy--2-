@@ -13,6 +13,7 @@ import { Metadata } from "next";
 import Technology from "./technology/page";
 import React from "react";
 import OurProcess from "@/components/Our-Process";
+import WhatYouDo from "@/components/Our-Process/WhatYouDo/Index";
 
 export const metadata: Metadata = {
   title: "NeutonSoft",
@@ -29,7 +30,8 @@ export default function Home() {
       <OurProcess />
       {/* <Video /> */}
       {/* <AboutSectionOne /> */}
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
+      <WhatYouDo />
       <Testimonials />
       <Pricing />
       {/* <Blog /> */}
