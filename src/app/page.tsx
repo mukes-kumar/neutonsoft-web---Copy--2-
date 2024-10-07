@@ -15,7 +15,7 @@ import React from "react";
 import OurProcess from "@/components/Our-Process";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
+  title: "NeutonSoft",
   description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
