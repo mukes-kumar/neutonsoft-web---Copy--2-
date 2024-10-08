@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import styles from "../index.module.css"
 
 const Header = () => {
   // Navbar toggle
@@ -112,7 +113,7 @@ const Header = () => {
                               ${sticky ? 'lg:text-black text-gray-800 hover:text-indigo-400' : ' lg:text-gray-500 text-gray-700  lg:font-semibold hover:text-indigo-400'}    
                             `}
                           >
-                            {menuItem.title}
+                            <p className={styles.hoverunderlines}>                            {menuItem.title}</p>
                           </Link>
                         ) : (
                           <>

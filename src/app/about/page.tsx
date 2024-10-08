@@ -24,7 +24,7 @@ const AboutPage = () => {
       />
       
       {/* <AboutSectionOne /> */}
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
     </>
   );
 };

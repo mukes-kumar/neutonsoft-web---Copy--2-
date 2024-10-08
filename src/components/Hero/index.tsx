@@ -18,7 +18,7 @@ const Hero = () => {
             <source src="/images/video/Hero_2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute inset-0 bg-black opacity-20"></div> 
+          <div className="absolute inset-0 bg-slate-800 opacity-20"></div> 
         </div>
 
         <div className="relative z-10 container">

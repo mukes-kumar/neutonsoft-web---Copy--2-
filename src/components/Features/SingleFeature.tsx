@@ -8,8 +8,8 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
     ">
       <div className="wow fadeInUp " data-wow-delay=".15s">
         <div className=" mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-          
-          {icon}
+          <div className="hover:rotate-180 transition ease-in-out duration-300">{icon}
+          </div>
         </div>
         <h3 className="mb-5 text-xl font-bold text-stroke-dark dark:text-black  sm:text-2xl lg:text-xl xl:text-2xl">
           {title}

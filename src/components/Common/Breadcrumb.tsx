@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { motion } from 'framer-motion';
+import { title } from "process";
 
 const Breadcrumb = ({
   pageName,
@@ -9,6 +10,15 @@ const Breadcrumb = ({
   pageName: string;
   description: string;
 }) => {
+
+
+  const titleCont = [
+     {titles: "Better and more cost-effective processes"},
+     {titles: 'Reductions in cost and time to hire and more control over both'},
+     {titles: 'A wider and more engaged network of potential candidates'},
+     {titles: 'Enhanced employer brand and corporate reputation'},
+     {titles: 'Closer alignment of talent strategy with business strategy'},
+  ];
 
   const variants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -55,9 +65,9 @@ const Breadcrumb = ({
           </div>
         </div>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName === "About Us" ? 'show' : 'hidden'}`}>
-          <div className="pl-10 p-4">
+          <div className="pl-12 p-4">
             {/* <h2 className="text-2xl font-bold text-gray-900">About Us</h2> */}
-            <p className="text-base font- leading-relaxed text-body-color">NEUTON COMPUTERSOFT PRIVATE LIMITED 
+            <p className="text-base font- leading-relaxed text-body-color">NEUTON COMPUTERSOFT PRIVATE LIMITED
               <br />
               At NeutonSoft we help our customers to maximize return and productivity through outsourcing their non-core functions.
               <br />
@@ -69,18 +79,39 @@ const Breadcrumb = ({
             </p>
             <div className="ml-10 text-base font- leading-relaxed text-body-color">
 
+              
+              <div className="mt-4 lg:mt-4 flex items-center">
+                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
+                </span>
+                <p>Better and more cost-effective processes</p>
+              </div>
 
-              <p className="mt-4 lg:mt-4">Better and more cost-effective processes
-              </p>
-              <p className="mt-2 lg:mt-1">Reductions in cost and time to hire and more control over both
-              </p>
-              <p className="mt-2 lg:mt-1">A wider and more engaged network of potential candidates
-              </p>
-              <p className="mt-2 lg:mt-1">Enhanced employer brand and corporate reputation
-              </p>
-              <p className="mt-2 lg:mt-1">Closer alignment of talent strategy with business strategy
-              </p>
 
+
+              <div className="mt-4 lg:mt-4 flex items-center">
+                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
+                </span>
+                <p>Reductions in cost and time to hire and more control over both</p>
+              </div>
+
+              <div className="mt-4 lg:mt-4 flex items-center">
+                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
+                </span>
+                <p>A wider and more engaged network of potential candidates</p>
+              </div>
+
+              <div className="mt-4 lg:mt-4 flex items-center">
+                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
+                </span>
+                <p>Enhanced employer brand and corporate reputation</p>
+              </div>
+              
+              <div className="mt-4 lg:mt-4 flex items-center">
+                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
+                </span>
+                <p>Closer alignment of talent strategy with business strategy</p>
+              </div>
+             
             </div>
           </div>
           <div className="text- pl-10 p-4">
