@@ -5,7 +5,7 @@ const featuresData: Feature[] = [
     id: 1,
     icon: (
       <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
-        <path d="M224 328h32v16h-32z" fill="#0000ff" class="fill-000000"></path>
+        <path d="M224 328h32v16h-32z" fill="#0000ff" className="fill-000000"></path>
         <path
           d="M440 8H40A32.036 32.036 0 0 0 8 40v304a32.036 32.036 0 0 0 32 32h144v80h-24v16h160v-16h-24v-80h144a32.036 32.036 0 0 0 32-32V40a32.036 32.036 0 0 0-32-32ZM24 40a16.019 16.019 0 0 1 16-16h400a16.019 16.019 0 0 1 16 16v256H24Zm416 320H40a16.019 16.019 0 0 1-16-16v-32h432v32a16.019 16.019 0 0 1-16 16Z"
           fill="#1d1ba8" className="fill-000000"></path>
