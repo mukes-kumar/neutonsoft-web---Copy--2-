@@ -7,20 +7,20 @@ const CallMail = () => {
     {
       icon: '/images/contactUs/call.svg', // Replace with your phone icon path
       text: 'Call Anytime',
-      content: '+91 1234 567 890',
-      content1: '+91 1234 567 890',
+      content: '+91-8957165792',
+      content1: '+971-568223695 ',
     },
     {
       icon: '/images/contactUs/mail.svg', // Replace with your email icon path
       text: 'Email Us',
-      content: 'contact@example.com',
-      content1: 'neutonsoft@gmail.com',
+      // content: 'contact@example.com',
+      content1: 'info@neutonsoft.com',
     },
     {
       icon: '/images/contactUs/location.svg', // Replace with your location icon path
       text: 'Visit Us',
-      content: '20 Island Park Road,',
-      content1: 'New Jears, New York USA',
+      content: 'F.NO. 203, SECTOR 1, P.NO 2 ON BRS CV TOWERS, MADHAPUR, HYDERABAD, SHAIKPET, TELANGANA, INDIA,500081',
+      
     },
   ];
 
@@ -46,7 +46,7 @@ const CallMail = () => {
   
 
   return (
-    <div className="container mx-auto py-16 mr-20 bg-white rounded-lg shadow p-10 pb-16">
+    <div className="container mx-auto pt-10 mr-20 bg-white rounded-lg shadow p-10 pb-16">
       {/* <h1 className="text-3xl font-bold mb-8">Contact Us</h1> */}
       <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {contactInfo.map((info, index) => (
@@ -60,15 +60,15 @@ const CallMail = () => {
             />
             <div className='flex flex-col'>
               <h2 className="text-xl font-semibold mb-2 text-slate-600">{info.text}</h2>
-              <p className="text-gray-500">{info.content}
+              <p className="text-gray-500 text-sm">{info.content}
               </p>
-              <p className='text-gray-500 mt-1'>{info.content1}</p>
+              <p className='text-gray-500 mt-1 text-sm'>{info.content1}</p>
             </div>
             
           </div>
         ))}
         <div>
-          <h2 className="text-2xl text-center font-semibold mb-2 text-slate-900 mt-2">Follow Us</h2>
+          <h2 className="text-2xl text-center font-semibold text-slate-900 mt-">Follow Us</h2>
         </div>
         <div className='flex'>
             {

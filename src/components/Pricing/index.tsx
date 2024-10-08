@@ -11,7 +11,7 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-10 lg:pb-20">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
+          title="Start Free Trial -change to - Choose Plan"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
           width="665px"
@@ -21,11 +21,10 @@ const Pricing = () => {
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-8">
             <span
               onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
+              className={`${isMonthly
                   ? "pointer-events-none text-primary"
                   : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+                } mr-4 cursor-pointer text-base font-semibold`}
             >
               Monthly
             </span>
@@ -36,9 +35,8 @@ const Pricing = () => {
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${isMonthly ? "" : "translate-x-full"
+                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -46,11 +44,10 @@ const Pricing = () => {
             </div>
             <span
               onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
+              className={`${isMonthly
                   ? "text-dark dark:text-white"
                   : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+                } ml-4 cursor-pointer text-base font-semibold`}
             >
               Yearly
             </span>
@@ -59,43 +56,66 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            button="Basic Plan"
+            packageName="Basic"
+            price={isMonthly ? "1800" : "2400"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="For startups needing to simple      solutions:"
           >
-            <OfferList text="All UI Components" status="active" />
+            {/* <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />
             <OfferList text="Commercial Use" status="active" />
             <OfferList text="Email Support" status="active" />
             <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Free Lifetime Updates" status="inactive" /> */}
+            <OfferList text="Custom Consultation & Requirement Analysis" status="active" />
+            <OfferList text="Static Website (Single Page)" status="active" />
+            <OfferList text="4-page Mobile Application Development" status="active" />
+            <OfferList text="Basic UI/UX Design" status="active" />
+            <OfferList text="Basic API Integration" status="active" />
+            <OfferList text="Standard Security Implementation" status="active" />
+            <OfferList text="10 Hours of Post-launch Support" status="active" />
+            <OfferList text="1 Revision Cycle" status="active" />
+            <OfferList text="Email & Chat Support" status="active" />
+
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            button="Professional Plan"
+            packageName="plan"
+            price={isMonthly ? "4000" : "5000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="For businesses requiring dynamic solutions:"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Full Business Consultation & Requirement Analysis" status="active" />
+            <OfferList text="Dynamic Website Development" status="active" />
+            <OfferList text="- 4-page Mobile Application Development" status="active" />
+            <OfferList text="Advanced UI/UX Design" status="active" />
+            <OfferList text="3 API Integrations" status="active" />
+            <OfferList text="Enhanced Security Features" status="active" />
+            <OfferList text="20 Hours of Post-launch Support" status="active" />
+            <OfferList text="2 Revision Cycles" status="inactive" />
+            <OfferList text="Email, Chat & Phone Suppor" status="active" />
+
+
+
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            button="Enterprise Plan"
+            packageName="Pricing"
+            price={isMonthly ? "Custom" : "1000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Custom solutions for large enterprises solutions:"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="End-to-End Consultation & Strategy" status="active" />
+            <OfferList text="Web, Mobile & Cloud-based App Development" status="active" />
+            <OfferList text="Advanced UI/UX Design & Custom Branding" status="active" />
+            <OfferList text="Unlimited API Integrations" status="active" />
+            <OfferList text="High-level Security & Compliance" status="active" />
+            <OfferList text="Dedicated Project Manager" status="active" />
+            <OfferList text="50 Hours of Post-launch Support" status="active" />
+            <OfferList text="Unlimited Revisions" status="active" />
+            <OfferList text="24/7 Priority Support" status="active" />
+
           </PricingBox>
         </div>
       </div>

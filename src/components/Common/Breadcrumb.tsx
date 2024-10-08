@@ -16,11 +16,11 @@ const Breadcrumb = ({
   };
   return (
     <>
-      <motion.section 
-      variants={variants}
-      initial="hidden"
-      animate="show"
-      className={`relative z-10 overflow-hidden  ${pageName==="About Us"?'pt-0':'pt-40 lg:pt-[160px]'}`}>
+      <motion.section
+        variants={variants}
+        initial="hidden"
+        animate="show"
+        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-0' : 'pt-40 lg:pt-[160px]'}`}>
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
@@ -54,43 +54,43 @@ const Breadcrumb = ({
             </div>
           </div>
         </div>
-        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName==="About Us"?'show':'hidden'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName === "About Us" ? 'show' : 'hidden'}`}>
           <div className="pl-10 p-4">
             {/* <h2 className="text-2xl font-bold text-gray-900">About Us</h2> */}
-            <p className="text-base font- leading-relaxed text-body-color">NeutonSoft is Fattest growing service provider of Recruitment Process Outsourcing (RPO) in USA, Canada,UAE and India, We recognizes the importance of the expertise of recruitment in an ever-changing economic scenario. Our strategy is focused upon results-driven RPO services and Solutions applicable to a diverse range of organizations. We have the resources and talent to manage recruitment process from the beginning to end.
+            <p className="text-base font- leading-relaxed text-body-color">NEUTON COMPUTERSOFT PRIVATE LIMITED 
               <br />
               At NeutonSoft we help our customers to maximize return and productivity through outsourcing their non-core functions.
               <br />
               In partnering with companies can expect:
               {/* <hr className="w-80 border-b border-gray-300 mt-1" /> */}
-               
+
               <br />
 
             </p>
             <div className="ml-10 text-base font- leading-relaxed text-body-color">
 
-              
-            <p className="mt-4 lg:mt-4">Better and more cost-effective processes
-            </p>
-            <p className="mt-2 lg:mt-1">Reductions in cost and time to hire and more control over both
-            </p>
-            <p className="mt-2 lg:mt-1">A wider and more engaged network of potential candidates
-            </p>
-            <p className="mt-2 lg:mt-1">Enhanced employer brand and corporate reputation
-            </p>
-            <p className="mt-2 lg:mt-1">Closer alignment of talent strategy with business strategy
-            </p>
+
+              <p className="mt-4 lg:mt-4">Better and more cost-effective processes
+              </p>
+              <p className="mt-2 lg:mt-1">Reductions in cost and time to hire and more control over both
+              </p>
+              <p className="mt-2 lg:mt-1">A wider and more engaged network of potential candidates
+              </p>
+              <p className="mt-2 lg:mt-1">Enhanced employer brand and corporate reputation
+              </p>
+              <p className="mt-2 lg:mt-1">Closer alignment of talent strategy with business strategy
+              </p>
 
             </div>
           </div>
           <div className="text- pl-10 p-4">
             <h2 className="text-2xl font-bold text-gray-900">Why NeutonSoft?</h2>
             <p className="text-base font- leading-relaxed text-body-color">
-              NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.<br/><br/>
+              NEUTON COMPUTERSOFT PRIVATE LIMITED has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.<br /><br />
 
-              NeutonSoft team has expertise in Partial Cycle RPO, Enterprise RPO , Partial Cycle RPO and Project RPO.<br/><br/>
+              <br /><br />
 
-              We believe that to understand the benefits and capabilities of remote staffing, agencies need to experience it first-hand. why not call us today to try us out!<br/><br/>
+              <br /><br />
             </p>
           </div>
         </div>

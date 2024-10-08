@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  NeutonSoft has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.
+                NEUTON COMPUTERSOFT PRIVATE LIMITED has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.
                   Expert Web and Mobile Application Development Services to Elevate Your Business!
                 </p>
                 <div className="flex items-center">
@@ -109,13 +109,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-16">
+           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-16">
               <div className="mb-12 lg:mb-16">
-                <h2 className="text-xl font-bold text-black dark:text-white">
+                <h2 className="text-xl font-bold text-black dark:text-white pb-7">
                   Services
                 </h2>
-                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-40"></div>
-                <ul>
+                {/* <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-40"></div> */}
+                <ul className="w-full">
                   <li>
                     <Link
                       href="/blog"
@@ -140,8 +140,23 @@ const Footer = () => {
                       UI/UX Design
                     </Link>
                   </li>
-                  
                  
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Software Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Digital Transformation
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       href="/about"
@@ -156,10 +171,10 @@ const Footer = () => {
             
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-20">
               <div className="mb-12 lg:mb-16">
-                <h2 className="text-xl font-bold text-black dark:text-white">
+                <h2 className="text-xl font-bold text-black dark:text-white pb-7">
                   Terms
                 </h2>
-                <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-44"></div>
+                {/* <div className=" rounded-full my-5 pb-[4px] bg-red-500 lg:mr-20 mr-44"></div> */}
                 <ul>
                   <li>
                     <Link
@@ -232,8 +247,8 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white flex justify-center">
-              ©2022 Copyright All Rights Reserved.
+            <p className="text-center text-sm text-body-color dark:text-white flex justify-center">
+              ©2022 Copyright NEUTON COMPUTERSOFT PRIVATE LIMITED  All Rights Reserved.
             </p>
           </div>
         </div>

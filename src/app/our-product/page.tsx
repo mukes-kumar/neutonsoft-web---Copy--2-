@@ -14,7 +14,8 @@ function page() {
     <>
     <Breadcrumb
         pageName="Our Product Page"
-        description="Our dedicated customer support team is ready to assist you with any questions or concerns. Feel free to reach out to us using the following methods."
+        description="Business Process Outsourcing Solutions can improve the efficiency of your organization by allowing you to focus on your core competencies. Our team of experts can handle all of your administrative and support needs, allowing you to reduce costs and improve margins. Let us show you how we can help streamline your operations and improve your bottom line."
+
       />
 
       <OurProductPage />
