@@ -101,9 +101,9 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             button="Enterprise Plan"
-            packageName="Custom Pricing"
-            price={isMonthly ? "1000" : ""}
-            duration={isMonthly ? "mo" : "yr"}
+            packageName=""
+            price={isMonthly ? "Custom Pricing" : ""}
+            duration={isMonthly ? "" : ""}
             subtitle="Custom solutions for large enterprises solutions:"
           >
             <OfferList text="End-to-End Consultation & Strategy" status="active" />

@@ -9,37 +9,36 @@ function OurMission() {
   };
 
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 py-16">
+    <section className="bg-gray-5 dark:bg-gray-700 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">Our Mission</h2>
-        <motion.p
-          variants={variants}
-          initial="hidden"
-          animate="show"
-          className="text-lg text-gray-700 dark:text-gray-400 mb-16"
-        >
-          At NeutonSoft, we are committed to empowering businesses and individuals through innovative software solutions. Our mission is to deliver exceptional technology that drives growth, efficiency, and success. We strive to create a positive impact on the world by providing cutting-edge solutions that address real-world challenges.
-        </motion.p>
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate="show"
-          className="relative inline-block w-64 h-64 mx-auto mb-8"
-        >
-          <Image
-            src="/images/our-mission/mission.jpg" // Replace with your image path
-            alt="Our Mission"
-            className="rounded-full"
-          width={140} height={40}/>
-        </motion.div>
-        <motion.p
-          variants={variants}
-          initial="hidden"
-          animate="show"
-          className="text-lg text-gray-700 dark:text-gray-400"
-        >
-          We believe in building strong partnerships with our clients, understanding their unique needs, and tailoring our solutions to meet their specific requirements. Our team of talented professionals is dedicated to delivering the highest quality software, combined with exceptional customer service.
-        </motion.p>
+        <div className="container mx-auto py-10">
+          {/* Your mission page content here */}
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-gray-800 mb-8">Our Mission</h1>
+            <p className="text-lg text-gray-500 max-w-md text-center">
+              Our mission is to [Your mission statement]
+            </p>
+          </div>
+          <div className="relative">
+            <Image src="/mission-image.jpg" alt="Mission Image" className="w-full h-auto animate-pulse" width={140} height={40} />
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 animate-fadeIn"></div>
+          </div>
+
+        </div>
+        <div className="relative">
+          <Image src="/mission-image.jpg" alt="Mission Image" className="w-full h-auto animate-pulse" width={140} height={40} />
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 animate-fadeIn">
+            <div className="flex flex-col items-center justify-center h-full">
+              <h2 className="text-3xl font-bold text-white">Our Values</h2>
+              <ul className="mt-8">
+                <li className="text-lg text-white animate-fadeInUp delay-100">Value 1</li>
+                <li className="text-lg text-white animate-fadeInUp delay-200">Value 2</li>
+                <li className="text-lg text-white animate-fadeInUp delay-300">Value 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

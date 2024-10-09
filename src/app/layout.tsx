@@ -8,12 +8,15 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
 const inter = Inter({ subsets: ["latin"] });
+// import ScrollReveal from 'scrollreveal';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  
   return (
     <html suppressHydrationWarning lang="en">
       {/*
@@ -22,9 +25,9 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-white ${inter.className}`}>
+      <body className={` bg-[#FCFCFC] dark:bg-white ${inter.className}`}>
         <Providers>
-          <Header />
+          <Header/>
           {children}
           <Footer />
           <ScrollToTop />
@@ -34,4 +37,5 @@ export default function RootLayout({
   );
 }
 
-import { Providers } from "./providers";
+import { Providers } from "./providers";import { useEffect } from "react";
+

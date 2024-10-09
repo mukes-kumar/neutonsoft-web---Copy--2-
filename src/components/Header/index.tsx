@@ -7,7 +7,14 @@ import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import styles from "../index.module.css"
 
+// import ScrollReveal from 'scrollreveal';
+
+
+
 const Header = () => {
+
+  
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
