@@ -12,13 +12,13 @@ const Breadcrumb = ({
   description: string;
 }) => {
 
-  
+
   const titleCont = [
-     {titles: "Better and more cost-effective processes"},
-     {titles: 'Reductions in cost and time to hire and more control over both'},
-     {titles: 'A wider and more engaged network of potential candidates'},
-     {titles: 'Enhanced employer brand and corporate reputation'},
-     {titles: 'Closer alignment of talent strategy with business strategy'},
+    { titles: "Better and more cost-effective processes" },
+    { titles: 'Reductions in cost and time to hire and more control over both' },
+    { titles: 'A wider and more engaged network of potential candidates' },
+    { titles: 'Enhanced employer brand and corporate reputation' },
+    { titles: 'Closer alignment of talent strategy with business strategy' },
   ];
 
   const variants = {
@@ -31,111 +31,47 @@ const Breadcrumb = ({
         variants={variants}
         initial="hidden"
         animate="show"
-<<<<<<< HEAD
-        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-40' : 'pt-40 lg:pt-[160px]'}`}>
-=======
-        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-0' : 'pt-50 lg:pt-[100px]'}`}>
->>>>>>> e8040a92b0b24ceeecfae87ef98bfe8cfe65d4e2
+        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-40' : 'pt-50 lg:pt-[100px]'}`}>
         <div className="container">
-        <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36">
-              <div className="text-end">
-                <ul className="flex items-center  md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-bold text-black hover:text-primary"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-base font-bold text-primary">
-                    {pageName}
-                  </li>
-                </ul>
-              </div>
+          <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36">
+            <div className="text-end">
+              <ul className="flex items-center  md:justify-end">
+                <li className="flex items-center">
+                  <Link
+                    href="/"
+                    className="pr-1 text-base font-bold text-black hover:text-primary"
+                  >
+                    Home
+                  </Link>
+                  <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                </li>
+                <li className="text-base font-bold text-primary">
+                  {pageName}
+                </li>
+              </ul>
             </div>
+          </div>
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-            
+
               <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-              <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   {pageName}
                 </h1>
                 <p className="text-base font-medium leading-relaxed text-body-color">
                   {description}
                 </p>
-               
+
 
               </div>
             </div>
-           
+
           </div>
         </div>
         <div className={`${pageName === "About Us" ? 'show' : 'hidden'}`}>
-             <AboutButton />
+          <AboutButton />
         </div>
-        {/* <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName === "About Us" ? 'show' : 'hidden'}`}>
-          <div className="pl-12 p-4">
-            {/* <h2 className="text-2xl font-bold text-gray-900">About Us</h2> */}
-            {/* <p className="text-base font- leading-relaxed text-body-color">NEUTON COMPUTERSOFT PRIVATE LIMITED
-              <br />
-              At NeutonSoft we help our customers to maximize return and productivity through outsourcing their non-core functions.
-              <br />
-              In partnering with companies can expect: */} 
-              {/* <hr className="w-80 border-b border-gray-300 mt-1" /> */}
-
-              {/* <br />
-
-            </p>
-            <div className="ml-10 text-base font- leading-relaxed text-body-color">
-
-              
-              <div className="mt-4 lg:mt-4 flex items-center">
-                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
-                </span>
-                <p>Better and more cost-effective processes</p>
-              </div>
-
-
-
-              <div className="mt-4 lg:mt-4 flex items-center">
-                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
-                </span>
-                <p>Reductions in cost and time to hire and more control over both</p>
-              </div>
-
-              <div className="mt-4 lg:mt-4 flex items-center">
-                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
-                </span>
-                <p>A wider and more engaged network of potential candidates</p>
-              </div>
-
-              <div className="mt-4 lg:mt-4 flex items-center">
-                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
-                </span>
-                <p>Enhanced employer brand and corporate reputation</p>
-              </div>
-              
-              <div className="mt-4 lg:mt-4 flex items-center">
-                <span className="mr-3 flex h-[10px] w-full max-w-[10px] items-center justify-center rounded-full bg-primary bg-opacity-1 text-primary">
-                </span>
-                <p>Closer alignment of talent strategy with business strategy</p>
-              </div>
-             
-            </div>
-          </div>
-          <div className="text- pl-10 p-4">
-            <h2 className="text-2xl font-bold text-gray-900">Why NeutonSoft?</h2>
-            <p className="text-base font- leading-relaxed text-body-color">
-              NEUTON COMPUTERSOFT PRIVATE LIMITED has vast experience providing On-Demand Recruiting Services. On-Demand Recruitment Provides you with the flexibility of choosing when and for how long you need talent acquisition services based on your needs.<br /><br />
-
-              <br /><br />
-
-              <br /><br />
-            </p>
-          </div>
-        </div> */}
+        
         <div>
           <span className="absolute left-0 top-0 z-[-1]">
             <svg
