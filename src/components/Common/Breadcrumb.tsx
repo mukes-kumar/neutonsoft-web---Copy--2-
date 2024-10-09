@@ -30,38 +30,41 @@ const Breadcrumb = ({
         variants={variants}
         initial="hidden"
         animate="show"
-        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-0' : 'pt-40 lg:pt-[160px]'}`}>
+        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-0' : 'pt-50 lg:pt-[100px]'}`}>
         <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  {pageName}
-                </h1>
-                <p className="text-base font-medium leading-relaxed text-body-color">
-                  {description}
-                </p>
-
-              </div>
-            </div>
-            <div className="md:block hidden w-full px-4 md:w-4/12 lg:w-5/12">
+        <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36">
               <div className="text-end">
-                <ul className="flex items-center md:justify-end">
+                <ul className="flex items-center  md:justify-end">
                   <li className="flex items-center">
                     <Link
                       href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                      className="pr-1 text-base font-bold text-black hover:text-primary"
                     >
                       Home
                     </Link>
                     <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
-                  <li className="text-base font-medium text-primary">
+                  <li className="text-base font-bold text-primary">
                     {pageName}
                   </li>
                 </ul>
               </div>
             </div>
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
+            
+              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
+              <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                  {pageName}
+                </h1>
+                <p className="text-base font-medium leading-relaxed text-body-color">
+                  {description}
+                </p>
+               
+
+              </div>
+            </div>
+           
           </div>
         </div>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pageName === "About Us" ? 'show' : 'hidden'}`}>
