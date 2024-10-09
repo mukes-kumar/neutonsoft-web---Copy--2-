@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { title } from "process";
-import AboutButton from "../About/AboutButton";
+// import AboutButton from "../About/AboutButton";
 
 const Breadcrumb = ({
   pageName,
@@ -68,9 +68,9 @@ const Breadcrumb = ({
 
           </div>
         </div>
-        <div className={`${pageName === "About Us" ? 'show' : 'hidden'}`}>
+        {/* <div className={`${pageName === "About Us" ? 'show' : 'hidden'}`}>
           <AboutButton />
-        </div>
+        </div> */}
         
         <div>
           <span className="absolute left-0 top-0 z-[-1]">
