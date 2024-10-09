@@ -1,6 +1,7 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
+import Link from "next/link";
 
 const Brands = () => {
   return (
@@ -27,7 +28,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
 
   return (
     <div className="flex w-1/2 items-center justify-center px-3 py-[15px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
-      <a
+      <Link
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
@@ -35,7 +36,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       >
         <Image src={imageLight} alt={name} fill className="hidden dark:block" />
         <Image src={image} alt={name} fill className="block dark:hidden" />
-      </a>
+      </Link>
     </div>
   );
 };

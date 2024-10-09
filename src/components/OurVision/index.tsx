@@ -40,12 +40,12 @@ function OurVision() {
 
       <div className='text-center p-10 font-serif font-bold text-4xl'>
         <h1
-          style={{
-            backgroundImage:
-              "linear-gradient(43deg, #415800 0%, #C850C8 46%, #FFCC70 100%)",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "linear-gradient(43deg, #415800 0%, #C850C8 46%, #FFCC70 100%)",
+          //   WebkitBackgroundClip: "text",
+          //   color: "transparent",
+          // }}
         >
           Our Vision
         </h1>

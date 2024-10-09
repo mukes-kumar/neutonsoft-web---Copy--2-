@@ -25,6 +25,7 @@ const AboutPage = () => {
       
       {/* <AboutSectionOne /> */}
       {/* <AboutSectionTwo /> */}
+      {/* <div className=""></div> */}
     </>
   );
 };

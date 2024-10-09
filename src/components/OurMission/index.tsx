@@ -1,8 +1,8 @@
 "use client"
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
+// import { motion } from 'framer-motion';
+// import Image from 'next/image';
+// import { useEffect } from 'react';
+// import ScrollReveal from 'scrollreveal';
 import Vision from "../Data/Vision.json"; // Imported vision data
 
 
@@ -19,24 +19,24 @@ function OurMission() {
 
 
 
-  const sr = ScrollReveal({
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-  });
+  // const sr = ScrollReveal({
+  //   distance: '60px',
+  //   duration: 2500,
+  //   delay: 400,
+  //   // reset: true
+  // });
 
-  useEffect(() => {
-    sr.reveal('.home__header, .section__title', { delay: 600 });
-    sr.reveal('.home__footer', { delay: 700 });
-    sr.reveal('.home__img', { delay: 900, origin: 'top' });
+  // useEffect(() => {
+  //   sr.reveal('.home__header, .section__title', { delay: 600 });
+  //   sr.reveal('.home__footer', { delay: 700 });
+  //   sr.reveal('.home__img', { delay: 900, origin: 'top' });
 
-    sr.reveal('.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy', { origin: 'top', interval: 100 });
-    sr.reveal('.specs__data, .discount__animate', { origin: 'left', interval: 100 });
-    sr.reveal('.specs__img, .discount__img', { origin: 'right' });
-    sr.reveal('.case__img', { origin: 'top' });
-    sr.reveal('.case__data');
-  },);
+  //   sr.reveal('.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy', { origin: 'top', interval: 100 });
+  //   sr.reveal('.specs__data, .discount__animate', { origin: 'left', interval: 100 });
+  //   sr.reveal('.specs__img, .discount__img', { origin: 'right' });
+  //   sr.reveal('.case__img', { origin: 'top' });
+  //   sr.reveal('.case__data');
+  // },);
 
   const styles: StyleProps = {
     color:'transparent',
@@ -51,12 +51,12 @@ function OurMission() {
         
       <div className='text-center p-10 font-serif font-bold text-4xl'>
         <h1
-          style={{
-            backgroundImage:
-              "linear-gradient(43deg, #415800 0%, #C850C8 46%, #FFCC70 100%)",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "linear-gradient(43deg, #415800 0%, #C850C8 46%, #FFCC70 100%)",
+          //   WebkitBackgroundClip: "text",
+          //   color: "transparent",
+          // }}
         >
           Our Mission
         </h1>
