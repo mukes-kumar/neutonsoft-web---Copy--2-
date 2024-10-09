@@ -80,7 +80,7 @@ const Breadcrumb = ({
               viewBox="0 0 287 254"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-            >
+            > 
               <path
                 opacity="0.1"
                 d="M286.5 0.5L-14.5 254.5V69.5L286.5 0.5Z"
