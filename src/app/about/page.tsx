@@ -1,6 +1,7 @@
+import AboutButton from "@/components/About/AboutButton";
 import AboutHero from "@/components/About/AboutHero";
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+// import AboutSectionOne from "@/components/About/AboutSectionOne";
+// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -22,10 +23,9 @@ const AboutPage = () => {
             and Outsourcing company
             delivering end to end IT solutions."
       />
-      
-      {/* <AboutSectionOne /> */}
-      {/* <AboutSectionTwo /> */}
-      {/* <div className=""></div> */}
+      <div>
+          <AboutButton />
+        </div>
     </>
   );
 };
