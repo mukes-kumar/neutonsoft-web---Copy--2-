@@ -21,7 +21,7 @@ const WhatYouDo = () => {
           <div className="flex flex-row gap- mb-4">
             <div className="flex">
               <div>
-                <Image src="/images/our-process/bulb.svg" height={10} width={60} alt='icon' className='mt-4' />
+                <Image src="/images/our-process/bulb.svg" height={10} width={40} alt='icon' className='mt-4' />
               </div>
               <div className='ml-2 lg:mr-3'>
                 <h1 className='text-lg text-green-700 font-semibold'>Our Vision</h1>

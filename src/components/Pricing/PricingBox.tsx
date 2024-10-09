@@ -13,7 +13,7 @@ const PricingBox = (props: {
       <div className="relative z-10 rounded-sm bg-white px-8 py-10 shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark">
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
-            $<span className="amount">{price}</span>
+            <span className="amount">{price}</span>
             <span className="time text-lg font-medium text-body-color">
               /{duration}
             </span>
@@ -24,9 +24,10 @@ const PricingBox = (props: {
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
+          
           <button className={`flex w-full items-center justify-center rounded-sm bg-primary text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp    mmm  md:block px-6 py-4 md:px-6 lg:px-5 xl:px-9  btn relative  overflow-hidden hover:bg-white group  
                   `}>
-            <span className={`w-80 h-52 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-20 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 `}></span>
+            <span className={`lg:w-80 w-[500px] h-52 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-20 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 `}></span>
             <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">{props.button}</span>
           </button>
           {/* <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
