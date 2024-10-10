@@ -33,19 +33,19 @@ const Breadcrumb = ({
         animate="show"
         className={`relative z-10 overflow-hidden  lg:mt-32 mt-28`}>
         <div className="container">
-          <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36 mb-4">
+          <div className=" w-full text-center md:w-3/12  mb-4">
             <div className="text-end">
-              <ul className="flex items-center  md:justify-end">
+              <ul className="flex items-center">
                 <li className="flex items-center">
                   <Link
                     href="/"
-                    className="pr-1 text-base font-bold text-black hover:text-primary"
+                    className="pr-1 text-sm font-bold text-black hover:text-primary"
                   >
                     Home
                   </Link>
                   <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                 </li>
-                <li className="text-base font-bold text-primary">
+                <li className="text-sm font-bold text-primary">
                   {pageName}
                 </li>
               </ul>
