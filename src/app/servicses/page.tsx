@@ -2,6 +2,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import ServicePage from "@/components/Servicess";
+import ServicesAnimate from "@/components/Servicess/AnimateServices";
+import AnimateServices from "@/components/Servicess/AnimateServices";
 
 import { Metadata } from "next";
 import Image from "next/image";
@@ -21,6 +23,7 @@ const Services = () => {
         communication & provide regular updates. "
       />
       <Features />
+      <ServicesAnimate />
     </>
   );
 };

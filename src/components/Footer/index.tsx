@@ -111,6 +111,7 @@ const Footer = () => {
 
          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-16">
             <div className="mb-12 lg:mb-16">
+                {/* use css styles for underline  */}
               <span className={`${styles.onlyPara} mr-3 text-xl font-bold text-black dark:text-white mb-16`}>
                 Services
               </span>
@@ -172,6 +173,7 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 lg:ml-20">
             <div className="mb-12 lg:mb-16">
               
+              {/* use css styles for underline  */}
               <span className={`${styles.onlyPara} mr-3 text-xl font-bold text-black dark:text-white pb-7`}>
                 Terms
               </span>

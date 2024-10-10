@@ -13,7 +13,7 @@ import styles from "../index.module.css"
 
 const Header = () => {
 
-  
+
 
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -51,8 +51,8 @@ const Header = () => {
 
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-slate-100 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute lg:bg-transparent bg-white"
+          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-slate-100 !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          : "absolute lg:bg-transparent bg-white"
           }`}
       >
         <div className="container">
@@ -103,8 +103,8 @@ const Header = () => {
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-slate-100 px-6 py-4 duration-300 dark:border-body-color/20 dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
-                      ? "visibility top-full  opacity-100"
-                      : "invisible top-[120%] opacity-0"
+                    ? "visibility top-full  opacity-100"
+                    : "invisible top-[120%] opacity-0"
                     }`}
                 >
                   <ul className={`block lg:flex lg:space-x-12 ${navbarOpen ? '' : ''}`}>
@@ -153,6 +153,8 @@ const Header = () => {
                                   className={` block rounded py-2.5 text-sm 
                                   lg:px-3 ${sticky ? 'hover:hover:text-indigo-400' : 'hover:text-indigo-400'}  w-[110px]`}
                                 >
+
+                                  {/* use css style from ../index.module.css for underline nav title */}
                                   <span className={styles.subMenu}>{submenuItem.title}</span>
                                 </Link>
                               ))}

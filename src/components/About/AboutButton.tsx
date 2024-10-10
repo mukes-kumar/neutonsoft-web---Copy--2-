@@ -91,7 +91,7 @@ function AboutButton() {
              
             </div>
                     <div className="specs__data mt-6">
-                      <a className="inline-flex rounded-lg bg-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-700 hover:bg-indigo-700 hover:ring-pink-700"
+                      <a className="inline-flex rounded-lg bg-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-700 hover:bg-indigo-700 hover:ring-pink-700 animate-bounce duration-1000 ease-in-out"
                         href="/about">
                         Learn More
                       </a>
@@ -102,7 +102,7 @@ function AboutButton() {
               <div className="lg:specs__img mt-12 sm:mt-16 lg:mt-0">
                 <div className="lg:-mr-48 pl-6 md:mr-1 lg:relative lg:m-0 lg:h-full lg:px-0">
                   <Image alt=' img' loading="lazy" width="647" height="486"
-                    className="specs__img ml-2 ring-0 ring-white ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded hover:scale-105 transition-all lg:duration-300"
+                    className="specs__img ml-2 ring-0 ring-white ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded  animate-pulse"
                     style={styles} src="/images/about/footer.png"/>
                 </div>
                 
@@ -139,7 +139,7 @@ function AboutButton() {
               <div className="specs__data mt-12 w-full sm:mt-16 lg:mt-0">
                 <div className="lg:-ml-48 pr-6 md:ml-16 lg:relative lg:m-0 lg:h-full  w-fulllg:px-0">
                   <Image alt="Inbox user interface" loading="lazy" width="647" height="486"
-                    className="w-[450px] rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-[450px] rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none "
                     style={styles} src="/images/about/footer.png"/>
                 </div>
               </div>

@@ -30,15 +30,16 @@ function OurVision() {
           {values.map((value, index) => (
            <div
            key={index}
-           className="p-6 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-blue-500 delay-200 duration-300 "
+           className="group shadow-lg text-center hover:bg-blue-500 hover:text-white duration-1000 p-6 bg-white rounded-lg  hover:scale-105 hover:shadow-xl  "
          >
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 hover:text-white">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 duration-1000 group-hover:text-white">
                 {value.title}
               </h3>
-              <p className="text-gray-600 font-thin text-sm hover:text-white">{value.description}</p>
+              <p className="text-gray-600 font-thin text-sm group-hover:text-white duration-1000">{value.description}</p>
             </div>
           ))}
         </div>
+        
       </div>
     </section>
   );
