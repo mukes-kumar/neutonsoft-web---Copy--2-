@@ -11,7 +11,7 @@ function OurVision() {
   const values = Vision;
 
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 py-16">
+    <section className="bg-gray-100 dark:bg-gray-800 pt-24">
       
       <div className='text-center p-10 font-serif font-bold text-4xl'>
         <h1

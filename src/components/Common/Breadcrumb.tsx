@@ -31,9 +31,9 @@ const Breadcrumb = ({
         variants={variants}
         initial="hidden"
         animate="show"
-        className={`relative z-10 overflow-hidden  ${pageName === "About Us" ? 'pt-40' : 'pt-50 lg:pt-[100px]'}`}>
+        className={`relative z-10 overflow-hidden  lg:mt-32 mt-28`}>
         <div className="container">
-          <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36">
+          <div className="md:block hidden w-full text-center md:w-4/12 lg:w-5/12 ml-36 mb-4">
             <div className="text-end">
               <ul className="flex items-center  md:justify-end">
                 <li className="flex items-center">

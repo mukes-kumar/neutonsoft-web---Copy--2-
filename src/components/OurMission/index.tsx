@@ -46,7 +46,7 @@ function OurMission() {
   const values = Vision;
 
   return (
-    <section className="bg-gray-5 dark:bg-gray-700 py-16">
+    <section className="bg-gray-100 dark:bg-gray-800 lg:pt-28">
       <div className="container mx-auto px-4 text-center">
 
         <div className='text-center p-10 font-serif font-bold text-4xl'>

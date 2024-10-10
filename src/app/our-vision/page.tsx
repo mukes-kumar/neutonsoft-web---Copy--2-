@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <>
-      <div className="bg-gray-100 dark:bg-gray-900 py-10 relative">
+      <div className="bg-gray-100 dark:bg-gray-900 lg:pt-5 lg:pb-5 relative">
         <div className="container mx-auto px-4 relative">
           
-          <Image width={140} height={30}
+        <Image width={140} height={30}
             src="/images/our-vision/ourvision2.jpg"
             alt="Vision Image"
-            className="lg:visible invisible w-96 lg:h-72 h-16 object-cover lg:absolute rounded-md top-40 right-1 z-0 opacity-100"  
+            className="lg:visible invisible w-96 lg:h-64 h-16 object-cover lg:absolute rounded-md top-24 right-1 z-0 opacity-100"
           />
 
           <div className="relative z-10"> 
