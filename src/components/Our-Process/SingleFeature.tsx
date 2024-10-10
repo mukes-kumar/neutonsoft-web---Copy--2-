@@ -1,6 +1,7 @@
 import { Feature } from "@/types/feature";
 import Image from "next/image";
 import Css from "./index.module.css"
+import Styles from "../index.module.css";
 
 interface ImageProps {
   icon: string | Element; // Allow both string paths and Element types
@@ -17,13 +18,13 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {/* <Image src={icon} alt="icon" height={40} width={400}/> */}
           {icon}
         </div>
-        <h3 className={` mb-1 text-xl font-bold text-stroke-dark dark:text-black  sm:text-2xl lg:text-xl xl:text-2xl`}>
+        <span className={`${Styles.onlyPara} mb-1 text-xl font-bold text-stroke-dark dark:text-black  sm:text-2xl lg:text-xl xl:text-2xl w-[110px]`}>
           {title}<br/>
           
-        </h3>
-        <div className="pb-[4px] bg-indigo-600 lg:mr-32 mr-[330px] my-4 rounded-full"></div>
+        </span>
+        {/* <div className="pb-[4px] bg-indigo-600 lg:mr-32 mr-[330px] my-4 rounded-full"></div> */}
 
-        <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color ">
+        <p className={`pr-[10px] text-base font-medium leading-relaxed text-body-color `}>
           {paragraph}
         </p>
       </div>

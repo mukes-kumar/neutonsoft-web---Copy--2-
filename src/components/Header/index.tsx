@@ -113,20 +113,21 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
+                            className={` flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
                               ? "text-primary dark:text-indigo-400"
                               : "text-dark hover:text-primary dark:hover:text-indigo-400"
                               }
                               ${sticky ? 'lg:text-black text-gray-800 hover:text-indigo-400' : ' lg:text-gray-500 text-gray-700  lg:font-semibold hover:text-indigo-400'}    
                             `}
                           >
-                            <p className={styles.hoverunderlines}>                            {menuItem.title}</p>
+                            {/* use css style from ../index.module.css for underline nav title */}
+                            <span className={`${styles.onlyPara} `}>                            {menuItem.title}</span>
                           </Link>
                         ) : (
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className={`flex cursor-pointer items-center justify-between py-2 text-base group-hover:text-indigo-400  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? 'lg:text-black text-gray-700 hover:text-indigo-400 ' : ' text-gray-500  hover:text-indigo-400 lg:font-semibold'}    
+                              className={` flex cursor-pointer items-center justify-between py-2 text-base group-hover:text-indigo-400  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? 'lg:text-black text-gray-700 hover:text-indigo-400 ' : ' text-gray-500  hover:text-indigo-400 lg:font-semibold'}    
                             `}
                             >
                               {menuItem.title}
@@ -142,17 +143,17 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm ${sticky ? 'bg-slate-100 ' : 'bg-slate-100'} transition-[top] ml-5 duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"
+                              className={` submenu relative left-0 top-full rounded-sm ${sticky ? 'bg-slate-100 ' : 'bg-slate-100'} transition-[top] ml-5 duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"
                                 }`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className={`block rounded py-2.5 text-sm 
-                                  lg:px-3 ${sticky ? 'hover:hover:text-indigo-400' : 'hover:text-indigo-400'}`}
+                                  className={` block rounded py-2.5 text-sm 
+                                  lg:px-3 ${sticky ? 'hover:hover:text-indigo-400' : 'hover:text-indigo-400'}  w-[110px]`}
                                 >
-                                  {submenuItem.title}
+                                  <span className={styles.subMenu}>{submenuItem.title}</span>
                                 </Link>
                               ))}
                             </div>
