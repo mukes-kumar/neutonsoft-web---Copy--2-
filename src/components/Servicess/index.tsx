@@ -9,56 +9,62 @@ interface Service {
   icon: string;
 }
 
-const services: Service[] = [
-  {
-    title: 'Mobile App Development',
-    description: 'Build secure, scalable, appreciative and performing applications with advanced technologies on variousplatforms',
-    icon: '/images/servicesImg/java.png',
-  },
-  {
-    title: 'Web Development',
-    description: 'We build the website of your idea. To give a boost and success to your business in the Market',
-    icon: '/images/servicesImg/python.png',
-  },
-  {
-    title: 'Cloud Integration & Development',
-    description: 'Provides End to End cloud integration services on Oracle Cloud, Azure Cloud, Google Cloud, and AWS Cloud Platforms.',
-    icon: '/images/servicesImg/python.png',
-  },
-
-  {
-    title: 'IT Outsourcing & IT Consulting',
-    description: 'We at Neutonsoft help you in getting the results and solutions for your business projects with customized features.',
-    icon: '/images/servicesImg/python.png',
-  },
-  // Add more services as needed
-];
 
 const ServicePage = () => {
+
+  const data = [
+    {name:"Software Development"},
+    {name:"Automatic Optimization"},
+    {name:"Applicatication Services"},
+    {name:"IT Security Services"},
+    {name:"Data Analytics"},
+    {name:"System Integration Service"},
+    {name:"Help Desk Services"},
+    {name:"API Integration Service"},
+    {name:"Salesforce Integration Service"},
+    {name:"ERP Integration Service"},
+    {name:"Mobile Apps Development"},
+  ]
 
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
+      <div className='container lg:mt-28'>
+        <div className='grid lg:grid-cols-2 grid-rows-1'>
+          <div className=''>
+            <div className='flex flex-wrap flex-col'>
+              <p className='text-indigo-600'>Our All Services </p>
+              <h1 className='md:text-4xl text-2xl text-slate-800 font-bold my-3'>Software Development Services
+              </h1>
+              <p className='text-body-color font-serif'>At Neutonsoft, we develop advanced software products that are well-designed, coded to high standards, and well-tested. We ensure flawless communication & provide regular updates.</p>
 
-      <div
-        className="mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
-      >
-        {services.map((service) => (
-          <div 
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)} key={service.title} className="hover:relative hover:bg-red-500 p-4 transform bg-white rounded-lg shadow-md">
-            <div className="p-4 bg-gray-100 rounded-lg">
-              <Image src={service.icon} alt={service.title} className="w-12 h-12 text-blue-500 mx-auto" width={600} height={40} />
+              <p className='text-body-color font-serif mt-3'>Software development services is your possibility to outsource software engineering and support, and get maintainable, secure and impactful software at the best price. To date, Tito Softwares has fulfilled 100+ projects and offers vast experience in different programming techs and software types.</p>
             </div>
-            <h2 className="text-xl font-bold text-center mt-4">{service.title}</h2>
-            <p className="text-gray-700 text-center mt-2">{service.description}</p>
+            <section className="py-12">
+              <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* <!-- Card 1 --> */}
+                {
+                  data.map((name, index)=>(
+                    <div key={index} className="bg-indigo-100 p-4 rounded-lg  hover:shadow- hover:bg-blue-600 transition duration-1000 hover:text-white transform hover:scale-">
+                  <h2 className="text-base ">{name.name}</h2>
+                </div>
+                  ))
+                }                    
+              </div>
+            </section>
           </div>
-        ))}
-      </div>
+          <div className=" ">
+            <div className="">
+              <Image alt=' img' loading="lazy" width={400} height="40"
+                className="w-full"
+                src="/images/about/footer.png" />
+            </div>
 
-      
-    </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

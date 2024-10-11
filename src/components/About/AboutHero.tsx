@@ -20,7 +20,7 @@ const AboutHero = () => {
         initial="hidden"
         animate="show"
         className=" inset-0 z-0">
-          <Image src="/images/about/AboutHero.png" alt="" width={900} height={40}  className="lg:flex   object-cover mx-auto max-w-full sm:max-w-[80%]"></Image>
+          <Image src="/images/about/banner.png" alt="" width={900} height={40}  className="lg:flex   object-cover mx-auto max-w-full sm:max-w-[80%]"></Image>
           
 
           

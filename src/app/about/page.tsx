@@ -25,7 +25,7 @@ const AboutPage = () => {
       />
       <div>
           <AboutButton />
-        </div>
+      </div>
     </>
   );
 };
