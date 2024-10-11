@@ -43,7 +43,7 @@
 
 .onlyPara:hover::after{
   animation-name: lineanimate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 
 }
@@ -80,7 +80,7 @@
 
 .subMenu:hover::after{
  animation-name: lineanimate;
- animation-duration: 1s;
+ animation-duration: 0.5s;
  animation-fill-mode: forwards;
 
 }

@@ -3,6 +3,7 @@ import OurProductPage from '@/components/Our-Product'
 import React from 'react'
 
 import { Metadata } from "next";
+import NewProduct from '@/components/Our-Product/NewProduct';
 
 export const metadata: Metadata = {
   title: "our-product | Transforming Ideas into Innovative Solutions",
@@ -18,7 +19,8 @@ function page() {
 
       />
 
-      <OurProductPage />
+      {/* <OurProductPage /> */}
+      <NewProduct/>
     </>
   )
 }

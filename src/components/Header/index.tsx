@@ -13,8 +13,6 @@ import styles from "../index.module.css"
 
 const Header = () => {
 
-
-
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -187,7 +185,7 @@ const Header = () => {
                   <span className="relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-white">Get a quote</span>
                 </Link>
                 <div>
-                  {/* <ThemeToggler /> */}
+                  {/* <ThemeToggler />  */}
                 </div>
               </div>
             </div>
