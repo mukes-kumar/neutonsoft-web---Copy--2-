@@ -2,6 +2,7 @@ import Technologies from "@/components/Technology";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
+import AboveFooter from "@/components/Footer/AboveFooter";
 
 export const metadata: Metadata = {
   title: "Technology | Transforming Ideas into Innovative Solutions",
@@ -21,6 +22,7 @@ const Technology = () => {
           <Technologies />
         </div>
       </section>
+      <AboveFooter/>
     </>
   );
 };

@@ -3,6 +3,7 @@ import AboutHero from "@/components/About/AboutHero";
 // import AboutSectionOne from "@/components/About/AboutSectionOne";
 // import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import AboveFooter from "@/components/Footer/AboveFooter";
 
 import { Metadata } from "next";
 
@@ -26,6 +27,7 @@ const AboutPage = () => {
       <div>
           <AboutButton />
       </div>
+      <AboveFooter/>
     </>
   );
 };

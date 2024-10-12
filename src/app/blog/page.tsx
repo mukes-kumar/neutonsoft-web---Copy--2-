@@ -1,6 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import AboveFooter from "@/components/Footer/AboveFooter";
 
 import { Metadata } from "next";
 
@@ -92,6 +93,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
+      <AboveFooter/>
     </>
   );
 };

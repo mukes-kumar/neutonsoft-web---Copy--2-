@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import AboveFooter from "@/components/Footer/AboveFooter";
 import OurMission from "@/components/OurMission";
-import OurVision from "@/components/OurVision";
 
 import { Metadata } from "next";
 import Image from "next/image";
@@ -26,8 +26,7 @@ const Services = () => {
           <div className="relative z-10">
             <Breadcrumb
               pageName="Our Company Mission"
-              description="Empowering businesses with innovative software solutions that drive growth and efficiency.
-          Your technology partner for transformative digital solutions."
+              description="To provide best-in-class web and mobile application development services for distinct business industries from small to medium companies."
             />
           </div>
           <Image width={140} height={30}
@@ -36,10 +35,10 @@ const Services = () => {
             className="visible lg:invisible w-96 h-72 object-cover lg:absolute rounded-md top-40 right-1 z-0 opacity-100"
           />
 
-          <OurVision />
+          <OurMission />
         </div>
       </div>
-
+       <AboveFooter />
     </>
   );
 };

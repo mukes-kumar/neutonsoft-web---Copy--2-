@@ -30,7 +30,7 @@ const ServicePage = () => {
 
   return (
     <>
-      <div className='container lg:mt-28'>
+      <div className='container lg:mt-28 sm:mt-28 mt-10'>
         <div className='grid lg:grid-cols-2 grid-rows-1'>
           <div className=''>
             <div className='flex flex-wrap flex-col'>
@@ -54,11 +54,11 @@ const ServicePage = () => {
               </div>
             </section>
           </div>
-          <div className=" ">
+          <div className="lg:mt-28 lg:h-[400px]">
             <div className="">
               <Image alt=' img' loading="lazy" width={400} height="40"
-                className="w-full"
-                src="/images/about/footer.png" />
+                className="w-full lg:h-[500px]"
+                src="/images/servicesImg/sotware.png" />
             </div>
 
           </div>

@@ -3,6 +3,7 @@ import Breadcrumb from '@/components/Common/Breadcrumb'
 import React from 'react'
 
 import { Metadata } from "next";
+import AboveFooter from '@/components/Footer/AboveFooter';
 
 export const metadata: Metadata = {
   title: "carrer | Transforming Ideas into Innovative Solutions",
@@ -17,6 +18,8 @@ function page() {
         description="Our dedicated customer support team is ready to assist you with any questions or concerns. Feel free to reach out to us using the following methods."
       />
         <CarrerPage />
+
+        <AboveFooter />
 
     </>
   )

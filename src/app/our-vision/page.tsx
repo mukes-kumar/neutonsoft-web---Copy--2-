@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import AboveFooter from "@/components/Footer/AboveFooter";
 import OurVision from "@/components/OurVision";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -25,7 +26,7 @@ const Services = () => {
           <div className="relative z-10"> 
             <Breadcrumb
               pageName="Our Vision"
-              description="At Neutonsoft, we are dedicated to transforming your digital ideas into reality through innovative software solutions that drive growth, efficiency, and success. Our team of experienced developers and designers combines modern technology with creative thinking to deliver seamless, scalable, and secure solutions tailored to your business needs."
+              description="To take innovation in web and mobile application development to greater standards and establish our quality service with the global customers."
             />
           </div>
           <Image width={140} height={30}
@@ -37,6 +38,7 @@ const Services = () => {
           <OurVision />
         </div>
       </div>
+      <AboveFooter/>
     </>
   );
 };

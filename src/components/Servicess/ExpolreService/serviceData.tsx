@@ -1,4 +1,4 @@
-import { Feature } from "@/types/feature";
+import { Feature } from "@/types/service";
 
 const featuresData: Feature[] = [
   {
@@ -14,11 +14,13 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Mibile-App Devlopment",
+    more: "read more",
+    link: "/servicses/mobileApp",
     paragraph:
       "Tito is a company with years of experience in mobile app development. We have a team of developers who will provide you with secure, scalable, appreciative, and performing applications with advanced technologies on various platforms.",
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -29,11 +31,13 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Web App Development",
+    more: "read more",
+    link: "",
     paragraph:
       "We build the website of your idea. To give a boost and success to your business in the Market. Our build websites are visually strong and bug-free to attract audience engagement.",
   },
   {
-    id: 1,
+    id: 3,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -44,11 +48,13 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Software Development",
+    more: "read more",
+    link: "",
     paragraph:
       "At Tito, we develop advanced software products that are well-designed, coded to high standards, and well-tested. We ensure flawless communication & provide regular updates.",
   },
   {
-    id: 1,
+    id: 4,
     icon: (
       <svg width="40" height="42" viewBox="0 0 40 42" className="fill-current">
         <path
@@ -59,11 +65,13 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Digital Transformation",
+    more: "read more",
+    link: "",
     paragraph:
       "The digital era is upon us with technological advancements every day. It is vital companies take steps to embrace the digital transformation in the form of automation, IT modernization, digital applications, offering users a better experience, and more.",
   },
   {
-    id: 1,
+    id: 5,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -74,11 +82,13 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "IT Outsourcing & IT Consulting",
+    more: "read more",
+    link: "",
     paragraph:
       "Building an application, its management, security, and all the factors are not easy jobs. We at Tito help you in getting the results and solutions for your business projects with customized features.",
   },
   {
-    id: 1,
+    id: 6,
     icon: (
       <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
         <path
@@ -89,6 +99,8 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Digital Marketing",
+    more: "read more",
+    link: "",
     paragraph:
       "We have a team of experienced professionals who are top-notch in driving the online business. We bring new and effective tactics to attract an audience to your business. Tito helps you in expanding your company’s online presence.",
   },

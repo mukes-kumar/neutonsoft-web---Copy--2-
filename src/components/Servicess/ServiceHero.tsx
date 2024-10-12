@@ -30,9 +30,9 @@ const ServiceHero = () => {
         className=" inset-0 z-0 w-full  mt-24 lg:mt-0 ">
           <Image src="/images/about/Software.jpg" alt="" width={900} height={40}  className="w-full xl:h-[600px]"></Image>
           
-          {/* <div className="absolute inset-0 bg-black opacity-20"></div>  */}
+          <div className="absolute inset-0 bg-black opacity-20"></div> 
         </motion.div>
-          {/* <div className="absolute inset-0 bg-slate-800 opacity-20"></div> */}
+          <div className="absolute inset-0 bg-slate-800 opacity-20"></div>
         </div>
 
         <div className="section__title relative z-10 container">
@@ -46,7 +46,7 @@ const ServiceHero = () => {
                 <span className="mr-3 ml-2 h-2 w-2 rotate-45 border-r-2 border-t-2 border-white"></span>
                 <span className="font-bold text-sm text-white">Services
                 </span>
-                <p className="text-sm !leading-relaxed animate-pulse text-indigo-800 sm:text-md md:text-xl font-bold shadow-lg">
+                <p className="text-sm !leading-relaxed animate-pulse text-yellow sm:text-md md:text-xl font-bold shadow-lg">
                 We are a Technology, Consulting and Outsourcing company delivering end to end IT solutions.
                 </p>
               </div>

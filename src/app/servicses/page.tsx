@@ -1,9 +1,12 @@
+import AboutButton from "@/components/About/AboutButton";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
+import AboveFooter from "@/components/Footer/AboveFooter";
 import ServicePage from "@/components/Servicess";
 import ServicesAnimate from "@/components/Servicess/AnimateServices";
 import AnimateServices from "@/components/Servicess/AnimateServices";
+import ServiceFeatures from "@/components/Servicess/ExpolreService";
 import ServiceHero from "@/components/Servicess/ServiceHero";
 
 import { Metadata } from "next";
@@ -25,8 +28,9 @@ const Services = () => {
         communication & provide regular updates. "
       /> */}
       <ServicePage/>
-      <Features />
-      <ServicesAnimate />
+      <ServiceFeatures/>
+      <AboveFooter/>
+      {/* <ServicesAnimate /> */}
     </>
   );
 };

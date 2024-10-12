@@ -85,12 +85,62 @@
 
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    color: brown;
-  }
+/* This for service page design */
+
+.hoverdiv {
+  position: relative;
+  overflow: hidden;
+  background-color: burlywood;
+}
+
+.hoverdiv button {
+  position: absolute;
+  /* bottom: 0; */
+  /* right: 0; */
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  /* transition-duration: 2s; */
+}
+
+.hoverdiv:hover button {
+  background-color: transparent;
+}
+
+.hoverdiv::before {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: blue;
+  transition: height 0.8s ease-in-out;
+  color: aliceblue;
+}
+
+.hoverdiv:hover::before {
+  height: 100%;
+  color: aliceblue;
+}
+
+/* For P tag */
+.hoverdiv p {
+  position: absolute;
+  /* bottom: 0; */
+  /* right: 0; */
+  top: 0;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  /* transition-duration: 2s; */
+}
+
+.hoverdiv:hover p {
+  background-color: transparent;
 }

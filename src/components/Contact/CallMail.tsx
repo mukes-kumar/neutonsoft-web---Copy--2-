@@ -50,13 +50,13 @@ const CallMail = () => {
       {/* <h1 className="text-3xl font-bold mb-8">Contact Us</h1> */}
       <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {contactInfo.map((info, index) => (
-          <div key={index} className="flex  items-center">
+          <div key={index} className="flex  items-center group">
             <Image
               src={info.icon}
               alt={info.text}
               width={50} // Adjust icon width as needed
               height={30} // Adjust icon height as needed
-              className="mb-4 mr-5 mt-4 bg-slate-200 p-3 rounded-md"
+              className="mb-4 mr-5 mt-4 bg-indigo-300 p-3 rounded-full group-hover:bg-indigo-800 duration-500 group-hover:rotate-180"
             />
             <div className='flex flex-col'>
               <h2 className="text-xl font-semibold mb-2 text-slate-600">{info.text}</h2>
@@ -70,11 +70,11 @@ const CallMail = () => {
         <div>
           <h2 className="text-2xl text-center font-semibold text-slate-900 mt-">Follow Us</h2>
         </div>
-        <div className='flex'>
+        <div className='flex group'>
             {
               icon.map((icon) =>(
                 <Link href={icon.href} key={icon.icon} className='flex justify-around flex-row w-full '>
-                  <Image src={icon.icon} alt='icon' width={50} height={30} className='hover:bg-indigo-200 transition-all delay-200 p-2 rounded-lg'/>
+                  <Image src={icon.icon} alt='icon' width={50} height={30} className='hover:bg-indigo-400 transition-all duration-500 p-2 rounded-xl hover:animate-bounce'/>
                 </Link>
               ))
             }
